@@ -1,32 +1,43 @@
-/* style.css */
+/* Style for the sorting visualizer */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  color: white;
+  padding: 10px 0;
   text-align: center;
 }
 
-nav button {
-  margin: 0 0.5rem;
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #visualizer {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  height: 500px;
-  margin: 2rem 0;
-}
-
-.bar {
-  width: 30px;
-  margin: 0 2px;
-  background-color: #4CAF50;
-  transition: height 0.5s ease;
+  align-items: end;
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  height: 300px; /* Adjust as needed */
+  border: 1px solid #ccc;
 }
