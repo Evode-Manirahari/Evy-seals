@@ -1,29 +1,31 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorting Visualizer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Sorting Visualizer</h1>
-    <nav>
-      <button id="bubbleSort">Bubble Sort</button>
-      <button id="mergeSort">Merge Sort</button>
-      <button id="quickSort">Quick Sort</button>
-      <button id="start">Start</button>
-      <button id="reset">Reset</button>
-    </nav>
-  </header>
+<html>
+  <head>
+    <title>AR Sorting Visualizer</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <style>
+      /* Add your CSS styling here */
+      .sorting-visualizer {
+        /* Styles for your visualizer */
+      }
+    </style>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='sourceType: webcam;'>
+      <!-- Define AR markers and entities here -->
+      <a-marker preset="hiro">
+        <!-- Here you would include your sorting visualizer component -->
+        <a-entity class="sorting-visualizer"></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
 
-  <main>
-    <div id="visualizer"></div>
-  </main>
-
-  <script src="script.js"></script>
-</body>
+    <script>
+      // Add your JavaScript for the sorting visualizer here
+      document.addEventListener('DOMContentLoaded', (event) => {
+        // Initialize and configure sorting visualizer
+      });
+    </script>
+  </body>
 </html>
-
