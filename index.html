@@ -1,39 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container">
-        
-    </div>
-    <div class="card" style="display: none;">
-        <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="array-container" id="array-container"></div>
+        <div class="controls">
+            <button onclick="generateArray()">Generate New Array</button>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="merge">Merge Sort</option>
+                <!-- Add more sorting algorithms here -->
+            </select>
+            <button onclick="startSorting()">Start Sorting</button>
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
-    </div>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
