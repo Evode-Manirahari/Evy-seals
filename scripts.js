@@ -1,32 +1,36 @@
-// JavaScript for the sorting visualizer
-
-// Function to generate an array of random numbers
-function generateArray(length, max) {
-  return Array.from({ length: length }, () => Math.floor(Math.random() * max));
+// Function to simulate the bubble sort
+function bubbleSort() {
+  console.log('Bubble Sort started!');
+  // Sorting algorithm logic here
 }
 
-// Function to create bars for the visualizer
-function createBars(array) {
-  const visualizer = document.getElementById('visualizer');
-  visualizer.innerHTML = ''; // Clear the visualizer
-  array.forEach(value => {
-    const bar = document.createElement('div');
-    bar.style.height = `${value}px`;
-    bar.style.width = '20px';
-    bar.style.margin = '0 2px';
-    bar.style.backgroundColor = 'dodgerblue';
-    bar.classList.add('bar');
-    visualizer.appendChild(bar);
-  });
+// Function to simulate the merge sort
+function mergeSort() {
+  console.log('Merge Sort started!');
+  // Sorting algorithm logic here
+}
+
+// Function to simulate the quick sort
+function quickSort() {
+  console.log('Quick Sort started!');
+  // Sorting algorithm logic here
+}
+
+// Function to start the sorting process
+function startSorting() {
+  console.log('Sorting started!');
+  // Call the sorting function here
+}
+
+// Function to reset the visualizer
+function resetVisualizer() {
+  console.log('Visualizer reset!');
+  // Reset logic here
 }
 
 // Event listeners for buttons
-document.getElementById('start').addEventListener('click', () => {
-  const array = generateArray(20, 200); // Generate an array of 20 numbers, each up to 200
-  createBars(array);
-});
-// Initialize the visualizer with a random array
-document.addEventListener('DOMContentLoaded', () => {
-  const initialArray = generateArray(20, 200);
-  createBars(initialArray);
-});
+document.getElementById('bubbleSort').addEventListener('click', bubbleSort);
+document.getElementById('mergeSort').addEventListener('click', mergeSort);
+document.getElementById('quickSort').addEventListener('click', quickSort);
+document.getElementById('start').addEventListener('click', startSorting);
+document.getElementById('reset').addEventListener('click', resetVisualizer);
