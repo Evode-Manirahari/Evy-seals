@@ -1,25 +1,29 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Visualizer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sorting Visualizer</h1>
-        <div class="array-container" id="array-container"></div>
-        <div class="controls">
-            <button onclick="generateArray()">Generate New Array</button>
-            <select id="algorithm">
-                <option value="bubble">Bubble Sort</option>
-                <option value="merge">Merge Sort</option>
-                <!-- Add more sorting algorithms here -->
-            </select>
-            <button onclick="startSorting()">Start Sorting</button>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
+  <header>
+    <h1>Sorting Visualizer</h1>
+    <nav>
+      <button id="bubbleSort">Bubble Sort</button>
+      <button id="mergeSort">Merge Sort</button>
+      <button id="quickSort">Quick Sort</button>
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="visualizer"></div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
