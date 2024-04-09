@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>AR Sorting Visualizer</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <style>
-      /* Add your CSS styling here */
-      .sorting-visualizer {
-        /* Styles for your visualizer */
-      }
-    </style>
-  </head>
-  <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs='sourceType: webcam;'>
-      <!-- Define AR markers and entities here -->
-      <a-marker preset="hiro">
-        <!-- Here you would include your sorting visualizer component -->
-        <a-entity class="sorting-visualizer"></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-
-    <script>
-      // Add your JavaScript for the sorting visualizer here
-      document.addEventListener('DOMContentLoaded', (event) => {
-        // Initialize and configure sorting visualizer
-      });
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Sorting Visualizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    #visualizer {
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Simple Sorting Visualizer</h1>
+  </header>
+  <nav>
+    <button id="bubbleSort">Bubble Sort</button>
+    <button id="mergeSort">Merge Sort</button>
+    <button id="quickSort">Quick Sort</button>
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+  </nav>
+  <main>
+    <div id="visualizer"></div>
+  </main>
+  <!-- Add your JavaScript file here -->
+  <script src="script.js"></script>
+</body>
 </html>
+
